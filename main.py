@@ -7,7 +7,32 @@ from sklearn.neighbors import KNeighborsClassifier
 
 train_data_path = './Data/train.csv'
 test_data_path = './Data/test.csv'
+"""
+FIRST: 
+Linear Regression
+Multiple Linear Regression
+KNN Regression
+Decision Tree
+SVM
+Gradient Boosting
+Random Forest
 
+HYPERPARAMETER TUNING : Bayesian Optimization
+
+THEN:
+Random Forest WITH Permutation Importance
+Random Forest WITH Feature Importance
+Decision Tree WITH Variance Threshold
+Gradient Boosting WITH Permutation feature importance
+Gradient Boosting WITH Recursive Feature Elimination
+Linear Regression WITH LASSO
+
+PERFORMANCE METRICS:
+Root Mean Absolute Error
+Adjusted R-Squared
+Mean Square Error
+
+"""
 #load data in
 df_train = pd.read_csv(train_data_path, sep=",")
 df_test = pd.read_csv(test_data_path, sep=",")
