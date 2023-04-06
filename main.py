@@ -5,8 +5,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsClassifier
 
-train_data_path = './Data/train.csv'
-test_data_path = './Data/test.csv'
 """
 FIRST: 
 Linear Regression
@@ -28,11 +26,15 @@ Gradient Boosting WITH Recursive Feature Elimination
 Linear Regression WITH LASSO
 
 PERFORMANCE METRICS:
-Root Mean Absolute Error
-Adjusted R-Squared
+Mean Absolute Error
+R-Squared
 Mean Square Error
 
 """
+
+train_data_path = './Data/train.csv'
+test_data_path = './Data/test.csv'
+
 #load data in
 df_train = pd.read_csv(train_data_path, sep=",")
 df_test = pd.read_csv(test_data_path, sep=",")
